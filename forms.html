@@ -1,37 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Feedback</title>
-</head>
-<body>
-    <h1>Hotel Feedbaack Form</h1>
-    <form  method="GET">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Course Sign Up</title>
+ </head>
+ <body>
+     <h1>Course Sign Up Page</h1>
+     <p>Please Note: All text fields required</p>
+     <form action="thankyou.html" method="get">
+         <label for="fn">First Name:</label>
+<input id="fn" type="text" placeholder="First Name" required>
+<p></p>
+<label for="ln">last Name:</label>
 
-<h2>Are you from inside the  US? Or Outside the US?</h2>
+<input id="ln" type="text" placeholder="last Name" required>
+<label for="mail">Email: </label>
+<input id="mail" type="email" name="" value="" placeholder="user@gmail.com" required>
 
-<label for="inusa">Inside:</label>
-<input id="inusa" type="radio" name="loc" value="inside">
-<label for="outusa">Outside:</label>
-<input id="outusa" type="radio" name="loc" value="outside">
-<h2>How was your service?</h2>
-<select name="stars" >
-    <option value="Great">3</option>
-    <option value="Okay">2</option>
-    <option value="Bad">1</option>
+<label for="pass">Password</label>
+<input type="password" name="" value=""required>
+<p>Are you over 18?</p>
+<label for="y">Yes:</label>
+<input id="y" type="radio" name="over" value="yes">
+<label for="n">No: </label>
+<input id="n" type="radio" name="over" value="no">
+<p>Do you have a Card or Paypal?</p>
+<select name="payment">
+<option value="cc">Credit Card</option>
+<option value="pp">PayPal</option>
 </select>
-<h2>Any other feedback?</h2>
-<textarea name="mytext"  cols="80" rows="8"></textarea>
-<input type="submit" value="SUBMIT">
-
-
-
-    </form>
-</body>
-</html>
-
+<p></p>
+<input type="submit" value="Sign Up!">
+     </form>
+ </body>
+ </html>
 
 
 
