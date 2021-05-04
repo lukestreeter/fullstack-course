@@ -1,22 +1,33 @@
-var x = 0;
-var i = 0;
-while (x < 27) {
-    console.log(`step ${i} x is currently: ${x}`);
+// var x = 0;
 
-if (x===3){
-console.log("X IS EQUAL TO THREE!");
+// while (x<5) {
+//     console.log("hello");
+//     x++
+// }
+
+
+
+// for (var i = 0; i < Array.length; i++) {
+//     console.log("hello with for loop");
+// }
+
+
+
+// var num = 1;
+
+// while (num<25) {
+// if (num%2 !== 0){
+//     console.log(num);
+// }
+// num++
+// }
+
+
+for (var i = 0; i < 25; i++) {
+    if (i%2 !== 0) {
+        console.log(i);
+
+    }
+
+
 }
-    x += 5;
-    i += 1;
-}
-
-
-
-
-
-
-
-
-
-
-
