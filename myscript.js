@@ -1,28 +1,31 @@
-var headOne = document.querySelector('#one')
-var headTwo = document.querySelector('#two')
-var headThree = document.querySelector('#three')
+var restart = document.querySelector("#b");
 
-headOne.addEventListener('mouseover',function(){
-    headOne.textContent = "Mouse Currently Over";
-    headOne.style.color = 'red';
-})
-
-headOne.addEventListener("mouseout",function(){
-headOne.textContent = "HOVER OVER ME!";
-headOne.style.color = 'black';
-})
-
-headTwo.addEventListener("click",function(){
-headTwo.textContent = 'CLICKED ON';
-headTwo.style.color = 'blue';
-})
-
-headThree.addEventListener('dblclick',function(){
-headThree.textContent = 'I WAS DOUBLE CLICKED';
-headThree.style.color = 'red';
-})
+var squares = document.querySelectorAll('td');
 
 
+function clearBoard () {
+    for (var i = 0; i < squares.length; i++) {
+
+    }
+} 
+
+restart.addEventListener('click',clearBoard);
+     
+
+
+function changeMarker(){
+   if(this.textContent === ''){
+this.textContent = 'X';
+   }else if (this.textContent === 'X') {
+       this.textContent = 'O';
+   }else {
+       this.textContent = '';
+   }
+}
+
+for (var i = 0; i < squares.length; i++) {
+    squares[i].addEventListener('click',changeMarker)
+}
 
 
 
