@@ -1,13 +1,36 @@
-x = set()
+x = [1,2,3,4]
 
-x.add(1)
-x.add(2)
-x.add(4)
-x.add(4)
-x.add(4)
-print(x)
+out = []
+for num in x:
+    out.append(num**2)
 
- converted = set([1,1,1,1,1,2,2,2,2,2,3,3,3,3])
+print(out)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
