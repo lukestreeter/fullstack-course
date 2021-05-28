@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>mine</title>
+    </head>
+    <body>
+        <script>
+
+            function choose(choices) {
+                var index = Math.floor(Math.random() * choices.length);
+                return "Game Server for" + choices[index];
+            }
+            function titler() {
+                document.title = choose(["valorant", "minecraft", "csgo", "pvz"]);
+            }
+            var name = "luke";
+            console.log(name);
+             var time = 1000;
+
+            var timeid = setInterval(titler, time);
+        </script>
+    </body>
+</html>
