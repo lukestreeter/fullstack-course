@@ -1,18 +1,13 @@
-x = [1,2,3,4]
+# Lambda Expression
 
-out = []
-for num in x:
-    out.append(num**2)
+# filter
+mylist = [1,2,3,4,5,6,7,8]
 
-print(out)
+def even_bool(num):
+    return num%2 == 0
 
-
-
-
-
-
-
-
+filter(even_bool,mylist)
+print(evens)
 
 
 
