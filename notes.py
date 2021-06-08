@@ -1,13 +1,78 @@
-# Lambda Expression
+class Dog():
 
-# filter
-mylist = [1,2,3,4,5,6,7,8]
+    def_init_(self,breed):
+     self.breed = breed
 
-def even_bool(num):
-    return num%2 == 0
+mydog = dog(breed = "hot")
+print(type(mydog.breed))
 
-filter(even_bool,mylist)
-print(evens)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
