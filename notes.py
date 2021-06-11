@@ -1,16 +1,16 @@
-class Dog():
 
-    def_init_(self,breed):
-     self.breed = breed
+class Book()
 
-mydog = dog(breed = "hot")
-print(type(mydog.breed))
+def_init_(self,title,author,pages):
+self.title = title
+self.author = author
+self.pages = pages
 
+def_str_(self):
+    return "Title: {}, Author: {}, Pages: {}".format(self.title,self.author,self.pages)
 
-
-
-
-
+b = Book("Python","jose",200)
+print(b)
 
 
 
