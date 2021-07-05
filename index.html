@@ -1,22 +1,15 @@
-<html>
-    <head>
-        <title>mine</title>
-    </head>
-    <body>
-        <script>
-
-            function choose(choices) {
-                var index = Math.floor(Math.random() * choices.length);
-                return "Game Server for" + choices[index];
-            }
-            function titler() {
-                document.title = choose(["valorant", "minecraft", "csgo", "pvz"]);
-            }
-            var name = "luke";
-            console.log(name);
-             var time = 1000;
-
-            var timeid = setInterval(titler, time);
-        </script>
-    </body>
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Guitar Page</title>
+    <link rel="stylesheet" href={% static "css/mystyle.css" %}/>
+</head>
+<body>
+    <h1>Hi, this is a pitcure of Django himself!</h1>
+    <img src="{% static "images/djangoguitar.jpg" %}" alt="Uh Oh, didn't show!">
+</body>
 </html>
